@@ -1,0 +1,24 @@
+Installation steps for DDS - Opensplice
+
+1. Download dependencies
+   $sudo apt-get install gawk flex bison perl gsoap
+
+2. Clone Opensplice repository into a directory of your choice e.g /home/usr
+   $git clone https://github.com/ADLINK-IST/opensplice.git
+
+3. $source ./configure x86_64.linux-dev
+
+4. Build and install program
+   $make
+   $make install 
+
+5. Add environment variable to .bashrc
+   alias ospl="source /home/usr/opensplice/install/HDE/x86_64.linux-dev/release.com"
+   OSPL_HOME=/home/usr/opensplice/install/HDE/x86_64.linux-dev
+   source /home/usr/opensplice/install/HDE/x86_64.linux-dev/release.com
+   
+
+To check if installation is correctly installed:
+$ospl
+Output: <<< Vortex OpenSplice HDE Release 6.7.180404OSS For x86_64.linux-dev, Date of installation >>>
+   
