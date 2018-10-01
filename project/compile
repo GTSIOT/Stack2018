@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [ ! -d "build" ]; then
+	mkdir build
+fi
+
+cp DDS_DefaultQoS.xml build
+
+cd build
+cmake ..
+make

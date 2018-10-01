@@ -1,0 +1,10 @@
+module EnvironmentalData
+{
+struct Environmental
+{
+    string<50> id;
+    string<50> type;
+    float value;
+};
+#pragma keylist Environmental
+};

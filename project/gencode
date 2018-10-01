@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+if [ "$(ls -A src)" ]; then
+    rm gen/*.cpp
+    rm gen/*.h
+    rm gen/*.hpp
+fi
+
+$OSPL_HOME/bin/./idlpp -S -l cpp -d gen idl/*.idl 
+
