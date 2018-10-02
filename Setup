@@ -2,6 +2,7 @@ Installation steps for DDS - Opensplice
 
 1. Download dependencies
    $sudo apt-get install gawk flex bison perl gsoap
+   $sudo apt-get install gsoap
    $sudo apt install git make g++
 
 2. Clone Opensplice repository into a directory of your choice e.g /home/usr
