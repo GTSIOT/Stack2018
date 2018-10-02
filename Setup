@@ -2,21 +2,28 @@ Installation steps for DDS - Opensplice
 
 1. Download dependencies
    $sudo apt-get install gawk flex bison perl gsoap
+   $sudo apt install git make g++
 
 2. Clone Opensplice repository into a directory of your choice e.g /home/usr
    $git clone https://github.com/ADLINK-IST/opensplice.git
-
-3. $source ./configure x86_64.linux-dev
+   $cd opensplice directory
+   
+3. Enter root to configure
+   $su
+   $source ./configure x86_64.linux-dev
 
 4. Build and install program
    $make
    $make install 
+   
 
-5. Add environment variable to .bashrc
+5. Add environment variable to .bashrc  (substitute "/home/usr with your cloned directory path")
    alias ospl="source /home/usr/opensplice/install/HDE/x86_64.linux-dev/release.com"
    OSPL_HOME=/home/usr/opensplice/install/HDE/x86_64.linux-dev
    source /home/usr/opensplice/install/HDE/x86_64.linux-dev/release.com
-   
+ 
+6. Exit root
+   $exit
 
 To check if installation is correctly installed:
 $ospl
