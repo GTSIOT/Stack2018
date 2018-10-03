@@ -29,4 +29,12 @@ Installation steps for DDS - Opensplice
 To check if installation is correctly installed:
 $ospl
 Output: <<< Vortex OpenSplice HDE Release 6.7.180404OSS For x86_64.linux-dev, Date of installation >>>
+
+
+
+================================================
+[Optional] Install nodejs
+sudo apt-get install curl python-software-properties
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install nodejs
    
